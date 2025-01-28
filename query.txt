@@ -1,0 +1,2 @@
+group_by(.fields.context) | map({context: .[0].fields.context, count: length}) | sort_by(.count) | reverse
+
